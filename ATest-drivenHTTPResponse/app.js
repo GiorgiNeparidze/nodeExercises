@@ -6,7 +6,7 @@ function createApp() {
 
     response.setHeader("Content-Type", "text/html");
 
-    const jsonResponseBody = "<html><body><h1>Stavo Preparando Per Un Eservcizio Pesante... :D</h1></body></html>";
+    const jsonResponseBody = "<html><body><h1>Stavo Preparando Per Un Eservcizio Pesante</h1></body></html>";
 
     response.end(jsonResponseBody);
   });

@@ -12,8 +12,5 @@ test("GET /", async () => {
     .expect(200)
     .expect("Content-Type", "text/html");
 
-  expect(
-    (response.body =
-      "<html><body><h1>Stavo Preparando Per Un Eservcizio Pesante</h1></body></html>")
-  );
+  expect(response.text).toEqual("<html><body><h1>Stavo Preparando Per Un Eservcizio Pesante</h1></body></html>");
 });
